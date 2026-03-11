@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: marketplace
+    database: marketplace     
+    schema: public       
+    tables:
+      - name: customer
+      - name: customer_address  
+      - name: seller
+      - name: product
+      - name: seller_product_price
+      - name: orders
+      - name: order_line
+  - name: dimensions             
+    database: marketplace     
+    schema: DIMENSIONS       
+    tables:
+      - name: dim_customer
+      - name: dim_product
+      - name: dim_seller

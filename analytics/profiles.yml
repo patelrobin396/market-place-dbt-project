@@ -1,0 +1,11 @@
+analytics:
+  target: prod
+  outputs:
+    prod:
+      type: postgres
+      host: "{{ env_var('HOST') }}"
+      user: "{{ env_var('USER') }}"         
+      password: "{{ env_var('PASS') }}" 
+      port: 5433            
+      dbname: "{{ env_var('DATABASE') }}"  
+      schema: "{{ env_var('SCHEMA') }}"       

@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: fact_order_lines
+    columns:
+      - name: customer_sk
+        data_tests:
+          - not_null
+      - name: product_sk
+        data_tests:
+          - not_null
+      - name: seller_sk
+        data_tests:
+          - not_null
+      - name: order_line_id
+        data_tests:
+          - not_null
+      - name: order_id
+        data_tests:
+          - not_null
+      - name: stock_quantity
+      - name: purchase_quantity
+      - name: current_price
+      - name: unit_price_at_sale
+      - name: line_subtotal
+      - name: total_order_amount
+      - name: order_date
+      - name: status 
